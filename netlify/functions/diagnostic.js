@@ -3,9 +3,9 @@
 // Les clés API sont dans les variables d'environnement Netlify (jamais dans le HTML)
 
 exports.handler = async function(event) {
-  // CORS headers
+  // CORS headers — allow all origins for debugging
   const headers = {
-    'Access-Control-Allow-Origin': 'https://shiftcrm.fr',
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Content-Type': 'application/json'
